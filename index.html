@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+    <title>Login - Controle de gastos</title>
+</head>
+
+<body>
+    <form>
+        <div>
+           <div><label>Email</label></div>
+           <input type="email" name="email" id="email" oninput="onChangeEmail()" placeholder="seu@email.com"/>
+           <div class="error" id="email-required-error" style="display: none;">Email é obrigatório </div>
+           <div class="error" id="email-invalid-error" style="display: none;">Email inválido </div>
+        </div>
+        <div>
+           <div><label>Senha</label></div>
+           <input type="password" name="password" id="password" oninput="onChangePassword()" placeholder="senha"/>
+           <div class="error" id="password-required-error" style="display: none;">Senha é obrigatória </div>
+        </div>
+        <div>
+           <button type="button" class="clear" id="recovery-password-button" disabled="true"> Recuperar Senha</button> 
+        </div>
+        <div>
+          <button type="button" class="solid" id ="login-button" disabled="true">Entrar</button>
+        </div>
+        <div>
+         <button type="button" class="outline"> Registrar</button>
+        </div>
+
+    </form>
+</body>
+
+<link rel="stylesheet" href="index.css"/>
+
+<script src="index.js"></script>
+
+</html>
